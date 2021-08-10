@@ -1,0 +1,5 @@
+<h1>New Bear</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.bear_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.bear_path(@conn, :index) %></span>
